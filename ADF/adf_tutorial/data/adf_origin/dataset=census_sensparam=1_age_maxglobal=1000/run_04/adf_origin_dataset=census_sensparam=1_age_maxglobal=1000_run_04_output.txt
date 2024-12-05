@@ -1,0 +1,6134 @@
+2024-11-26 09:12:25.528666: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-11-26 09:12:25.530646: E tensorflow/stream_executor/cuda/cuda_driver.cc:300] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-11-26 09:12:25.530665: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:163] retrieving CUDA diagnostic information for host: b77f960b3b00
+2024-11-26 09:12:25.530667: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:170] hostname: b77f960b3b00
+2024-11-26 09:12:25.530691: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:194] libcuda reported version is: 535.183.1
+2024-11-26 09:12:25.530703: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:198] kernel reported version is: 535.183.1
+2024-11-26 09:12:25.530705: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:305] kernel version seems to match DSO: 535.183.1
+WARNING:tensorflow:From ../adf_model/layer.py:25: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From ../adf_tutorial/utils.py:43: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From ../adf_utils/utils_tf.py:31: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+pass : setting
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 0.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 6.0
+pass :  0 times
+pass :  1 times
+hamming_distance 21.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 47.0
+pass :  0 times
+pass :  1 times
+hamming_distance 81.0
+pass :  0 times
+pass :  1 times
+hamming_distance 125.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 184.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 233.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 308.0
+pass :  0 times
+hamming_distance 374.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 461.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 568.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 691.0
+pass :  0 times
+pass :  1 times
+hamming_distance 807.0
+pass :  0 times
+hamming_distance 921.0
+pass :  0 times
+hamming_distance 1037.0
+pass :  0 times
+hamming_distance 1173.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1295.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1429.0
+pass :  0 times
+hamming_distance 1565.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1728.0
+pass :  0 times
+hamming_distance 1912.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 2071.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 2234.0
+pass :  0 times
+pass :  1 times
+hamming_distance 2415.0
+pass :  0 times
+hamming_distance 2604.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 2811.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 3047.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 3233.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 3491.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 3767.0
+pass :  0 times
+hamming_distance 4009.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 4319.0
+pass :  0 times
+hamming_distance 4552.0
+pass :  0 times
+hamming_distance 4785.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 5060.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 5365.0
+pass :  0 times
+hamming_distance 5638.0
+pass :  0 times
+hamming_distance 5897.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 6279.0
+pass :  0 times
+hamming_distance 6619.0
+pass :  0 times
+hamming_distance 6919.0
+pass :  0 times
+hamming_distance 7193.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 7608.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 8082.0
+pass :  0 times
+hamming_distance 8382.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 8775.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 9176.0
+pass :  0 times
+hamming_distance 9531.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 9938.0
+pass :  0 times
+pass :  1 times
+hamming_distance 10341.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 10734.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 11234.0
+pass :  0 times
+hamming_distance 11675.0
+pass :  0 times
+hamming_distance 12080.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+hamming_distance 12661.0
+pass :  0 times
+hamming_distance 13049.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 13430.0
+pass :  0 times
+pass :  1 times
+hamming_distance 13837.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 14327.0
+pass :  0 times
+pass :  1 times
+hamming_distance 14790.0
+pass :  0 times
+hamming_distance 15225.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 15800.0
+pass :  0 times
+pass :  1 times
+hamming_distance 16275.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 16800.0
+pass :  0 times
+hamming_distance 17346.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 17981.0
+pass :  0 times
+hamming_distance 18530.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 19032.0
+pass :  0 times
+pass :  1 times
+hamming_distance 19588.0
+pass :  0 times
+hamming_distance 20062.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 20787.0
+pass :  0 times
+pass :  1 times
+hamming_distance 21328.0
+pass :  0 times
+hamming_distance 21872.0
+pass :  0 times
+hamming_distance 22382.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 23036.0
+pass :  0 times
+hamming_distance 23544.0
+pass :  0 times
+pass :  1 times
+hamming_distance 24132.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 24729.0
+pass :  0 times
+hamming_distance 25235.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 25958.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 26502.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 27042.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 27570.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 28169.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 28707.0
+pass :  0 times
+hamming_distance 29387.0
+pass :  0 times
+pass :  1 times
+hamming_distance 30042.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 30808.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 31693.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 32358.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 33007.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 33592.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 34354.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 35275.0
+pass :  0 times
+pass :  1 times
+hamming_distance 36120.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 37167.0
+pass :  0 times
+pass :  1 times
+hamming_distance 37874.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 38612.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 39353.0
+pass :  0 times
+hamming_distance 39985.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 40871.0
+pass :  0 times
+hamming_distance 41647.0
+pass :  0 times
+hamming_distance 42327.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 43376.0
+pass :  0 times
+pass :  1 times
+hamming_distance 44281.0
+pass :  0 times
+hamming_distance 45115.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 45973.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 46660.0
+pass :  0 times
+hamming_distance 47453.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 48512.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 49585.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 50583.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 51553.0
+pass :  0 times
+hamming_distance 52287.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 53506.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 54622.0
+pass :  0 times
+hamming_distance 55465.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 56395.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 57407.0
+pass :  0 times
+hamming_distance 58250.0
+pass :  0 times
+hamming_distance 59139.0
+pass :  0 times
+hamming_distance 59974.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 60761.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 61634.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 62664.0
+pass :  0 times
+hamming_distance 63491.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 64377.0
+pass :  0 times
+hamming_distance 65446.0
+pass :  0 times
+pass :  1 times
+hamming_distance 66404.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 67343.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 68674.0
+pass :  0 times
+pass :  1 times
+hamming_distance 69880.0
+pass :  0 times
+hamming_distance 70749.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 71800.0
+pass :  0 times
+pass :  1 times
+hamming_distance 73143.0
+pass :  0 times
+hamming_distance 74229.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 75370.0
+pass :  0 times
+hamming_distance 76272.0
+pass :  0 times
+pass :  1 times
+hamming_distance 77353.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 78846.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 80256.0
+pass :  0 times
+hamming_distance 81286.0
+pass :  0 times
+pass :  1 times
+hamming_distance 82544.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 83479.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 84624.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 86185.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 87564.0
+pass :  0 times
+hamming_distance 88629.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 89814.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 91051.0
+pass :  0 times
+hamming_distance 92120.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 93171.0
+pass :  0 times
+hamming_distance 94245.0
+pass :  0 times
+pass :  1 times
+hamming_distance 95552.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 97130.0
+pass :  0 times
+pass :  1 times
+hamming_distance 98420.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 99810.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 101061.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 102563.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 104250.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 106011.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 107512.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 108929.0
+pass :  0 times
+hamming_distance 110041.0
+pass :  0 times
+hamming_distance 111307.0
+pass :  0 times
+pass :  1 times
+hamming_distance 112628.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 114002.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 115606.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 116884.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 118494.0
+pass :  0 times
+hamming_distance 119624.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 121198.0
+pass :  0 times
+pass :  1 times
+hamming_distance 122694.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 124145.0
+pass :  0 times
+hamming_distance 125290.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 126455.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+hamming_distance 128053.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 129435.0
+pass :  0 times
+hamming_distance 130800.0
+pass :  0 times
+hamming_distance 132017.0
+pass :  0 times
+pass :  1 times
+hamming_distance 133414.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 134931.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 136177.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 137550.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 139124.0
+pass :  0 times
+hamming_distance 140675.0
+pass :  0 times
+hamming_distance 141903.0
+pass :  0 times
+pass :  1 times
+hamming_distance 143233.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 144844.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 146073.0
+pass :  0 times
+pass :  1 times
+hamming_distance 147860.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 149403.0
+pass :  0 times
+hamming_distance 150686.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 152373.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 154272.0
+pass :  0 times
+pass :  1 times
+hamming_distance 155887.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 157496.0
+pass :  0 times
+hamming_distance 158998.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 160542.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 162448.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 164202.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 166205.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 168354.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 170482.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 171924.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 173784.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 175197.0
+pass :  0 times
+pass :  1 times
+hamming_distance 176892.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 178655.0
+pass :  0 times
+hamming_distance 180230.0
+pass :  0 times
+hamming_distance 181858.0
+pass :  0 times
+hamming_distance 183288.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 184670.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 186037.0
+pass :  0 times
+pass :  1 times
+hamming_distance 187812.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 189509.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 191343.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 193405.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 195057.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 196663.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 198616.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 200337.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 202331.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 204666.0
+pass :  0 times
+hamming_distance 206144.0
+pass :  0 times
+pass :  1 times
+hamming_distance 207911.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 209746.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 211210.0
+pass :  0 times
+pass :  1 times
+hamming_distance 213161.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 215038.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 216716.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 218698.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 220615.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 222863.0
+pass :  0 times
+hamming_distance 224615.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 226532.0
+pass :  0 times
+hamming_distance 228305.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 230719.0
+pass :  0 times
+pass :  1 times
+hamming_distance 232499.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 234463.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 236634.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 238441.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 240344.0
+pass :  0 times
+hamming_distance 242222.0
+pass :  0 times
+hamming_distance 244050.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 246528.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 249046.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 251089.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 252934.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 255607.0
+pass :  0 times
+hamming_distance 257257.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 259322.0
+pass :  0 times
+hamming_distance 261134.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 263058.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 265455.0
+pass :  0 times
+hamming_distance 267253.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 268930.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 271233.0
+pass :  0 times
+pass :  1 times
+hamming_distance 273162.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 275558.0
+pass :  0 times
+hamming_distance 277335.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 279416.0
+pass :  0 times
+hamming_distance 281342.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 283498.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 285776.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 288595.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 291411.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+hamming_distance 294232.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 296543.0
+pass :  0 times
+hamming_distance 298598.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 300648.0
+pass :  0 times
+hamming_distance 302771.0
+pass :  0 times
+hamming_distance 305290.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 307450.0
+pass :  0 times
+hamming_distance 309529.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 312293.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 314830.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 317374.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 319405.0
+pass :  0 times
+hamming_distance 321359.0
+pass :  0 times
+hamming_distance 323832.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 326585.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 328491.0
+pass :  0 times
+pass :  1 times
+hamming_distance 330603.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 332538.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 335220.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 338267.0
+pass :  0 times
+pass :  1 times
+hamming_distance 340548.0
+pass :  0 times
+hamming_distance 342579.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 345149.0
+pass :  0 times
+pass :  1 times
+hamming_distance 347624.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 349992.0
+pass :  0 times
+pass :  1 times
+hamming_distance 352419.0
+pass :  0 times
+pass :  1 times
+hamming_distance 354656.0
+pass :  0 times
+pass :  1 times
+hamming_distance 356873.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 359851.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 363035.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 365420.0
+pass :  0 times
+pass :  1 times
+hamming_distance 368117.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 370344.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 373435.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 376034.0
+pass :  0 times
+pass :  1 times
+hamming_distance 378953.0
+pass :  0 times
+hamming_distance 381093.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 383689.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 385925.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 388041.0
+pass :  0 times
+hamming_distance 390708.0
+pass :  0 times
+pass :  1 times
+hamming_distance 393943.0
+pass :  0 times
+pass :  1 times
+hamming_distance 396365.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 398557.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 401080.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 403602.0
+pass :  0 times
+hamming_distance 406286.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 409310.0
+pass :  0 times
+pass :  1 times
+hamming_distance 411759.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 414114.0
+pass :  0 times
+pass :  1 times
+hamming_distance 417002.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 419468.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 422490.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 425432.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 427674.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 430282.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 432970.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 435329.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 438461.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 441554.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 444989.0
+pass :  0 times
+hamming_distance 447223.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 449814.0
+pass :  0 times
+pass :  1 times
+hamming_distance 452561.0
+pass :  0 times
+pass :  1 times
+hamming_distance 455368.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 458161.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 461005.0
+pass :  0 times
+hamming_distance 463547.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 465970.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 468597.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 472118.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 474742.0
+pass :  0 times
+hamming_distance 477274.0
+pass :  0 times
+hamming_distance 479997.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 482538.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 485245.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 487810.0
+pass :  0 times
+pass :  1 times
+hamming_distance 490526.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 494011.0
+pass :  0 times
+pass :  1 times
+hamming_distance 496944.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 499461.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 501971.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 504906.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 507488.0
+pass :  0 times
+hamming_distance 510010.0
+pass :  0 times
+pass :  1 times
+hamming_distance 512607.0
+pass :  0 times
+hamming_distance 515156.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 518587.0
+pass :  0 times
+hamming_distance 521302.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 524344.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 527144.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 529953.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 533205.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 536556.0
+pass :  0 times
+hamming_distance 539521.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 541994.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 544402.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 546978.0
+pass :  0 times
+hamming_distance 549621.0
+pass :  0 times
+hamming_distance 552096.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 555206.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 558479.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 562085.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 565321.0
+pass :  0 times
+pass :  1 times
+hamming_distance 568355.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 572360.0
+pass :  0 times
+pass :  1 times
+hamming_distance 575548.0
+pass :  0 times
+hamming_distance 578441.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 582394.0
+pass :  0 times
+pass :  1 times
+hamming_distance 586046.0
+pass :  0 times
+hamming_distance 588638.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 592080.0
+pass :  0 times
+hamming_distance 595375.0
+pass :  0 times
+hamming_distance 597982.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 601394.0
+pass :  0 times
+pass :  1 times
+hamming_distance 604244.0
+pass :  0 times
+hamming_distance 607146.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 610663.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 613850.0
+pass :  0 times
+hamming_distance 616911.0
+pass :  0 times
+hamming_distance 619742.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 623386.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 626689.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 630176.0
+pass :  0 times
+pass :  1 times
+hamming_distance 634152.0
+pass :  0 times
+hamming_distance 636986.0
+pass :  0 times
+pass :  1 times
+hamming_distance 640339.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 644151.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 646812.0
+pass :  0 times
+hamming_distance 649841.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 653635.0
+pass :  0 times
+hamming_distance 656329.0
+pass :  0 times
+pass :  1 times
+hamming_distance 659430.0
+pass :  0 times
+hamming_distance 662486.0
+pass :  0 times
+pass :  1 times
+hamming_distance 666278.0
+pass :  0 times
+hamming_distance 669252.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 672135.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 675315.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 678994.0
+pass :  0 times
+pass :  1 times
+hamming_distance 682279.0
+pass :  0 times
+pass :  1 times
+hamming_distance 685888.0
+pass :  0 times
+hamming_distance 688940.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 692378.0
+pass :  0 times
+hamming_distance 695453.0
+pass :  0 times
+hamming_distance 698215.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 701241.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 704588.0
+pass :  0 times
+pass :  1 times
+hamming_distance 708414.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 712110.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 716118.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 719562.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 723832.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 727421.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 731169.0
+pass :  0 times
+pass :  1 times
+hamming_distance 734326.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 737926.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 742247.0
+pass :  0 times
+hamming_distance 745648.0
+pass :  0 times
+pass :  1 times
+hamming_distance 749141.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 752554.0
+pass :  0 times
+pass :  1 times
+hamming_distance 756274.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 760018.0
+pass :  0 times
+hamming_distance 762934.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 766571.0
+pass :  0 times
+hamming_distance 770000.0
+pass :  0 times
+hamming_distance 773047.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 776968.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 780820.0
+pass :  0 times
+pass :  1 times
+hamming_distance 784187.0
+pass :  0 times
+hamming_distance 787616.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 790721.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 794598.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 798253.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 802559.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 806331.0
+pass :  0 times
+hamming_distance 809366.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 813513.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 816639.0
+pass :  0 times
+hamming_distance 819588.0
+pass :  0 times
+hamming_distance 823216.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 826496.0
+pass :  0 times
+hamming_distance 829904.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 833941.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 838222.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 842826.0
+pass :  0 times
+pass :  1 times
+hamming_distance 846384.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 850235.0
+pass :  0 times
+hamming_distance 853774.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 858397.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 861920.0
+pass :  0 times
+hamming_distance 865336.0
+pass :  0 times
+pass :  1 times
+hamming_distance 868578.0
+pass :  0 times
+pass :  1 times
+hamming_distance 872126.0
+pass :  0 times
+hamming_distance 875132.0
+pass :  0 times
+hamming_distance 879504.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 883428.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 887362.0
+pass :  0 times
+hamming_distance 890989.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 895887.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 900443.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 905389.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 910344.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 914160.0
+pass :  0 times
+hamming_distance 917748.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 921233.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 925137.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 928679.0
+pass :  0 times
+hamming_distance 932394.0
+pass :  0 times
+hamming_distance 936463.0
+pass :  0 times
+pass :  1 times
+hamming_distance 940426.0
+pass :  0 times
+hamming_distance 944286.0
+pass :  0 times
+hamming_distance 947953.0
+pass :  0 times
+pass :  1 times
+hamming_distance 951994.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 956211.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 961368.0
+pass :  0 times
+hamming_distance 965019.0
+pass :  0 times
+pass :  1 times
+hamming_distance 968776.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 973850.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 978223.0
+pass :  0 times
+hamming_distance 982422.0
+pass :  0 times
+hamming_distance 985778.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 990291.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 993809.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 997702.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1001298.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1005186.0
+pass :  0 times
+hamming_distance 1008703.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1013124.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+hamming_distance 1017362.0
+pass :  0 times
+hamming_distance 1021066.0
+pass :  0 times
+hamming_distance 1024439.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+hamming_distance 1029518.0
+pass :  0 times
+hamming_distance 1032920.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1037136.0
+pass :  0 times
+hamming_distance 1041054.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1045085.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 1050182.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1054537.0
+pass :  0 times
+hamming_distance 1058411.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 1063077.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1067503.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1071230.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 1075950.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1080435.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1083843.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1087860.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1091968.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1095702.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1099739.0
+pass :  0 times
+hamming_distance 1103600.0
+pass :  0 times
+hamming_distance 1107275.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1110716.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1114729.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1119310.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1122875.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1127084.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1131793.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1135660.0
+pass :  0 times
+hamming_distance 1139838.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1144225.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1148106.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1152533.0
+pass :  0 times
+hamming_distance 1156620.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1161177.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1166668.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1171200.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1175127.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1179353.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1184003.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1188907.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1192934.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1196877.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1200701.0
+pass :  0 times
+hamming_distance 1204890.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1209422.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 1215112.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1219704.0
+pass :  0 times
+hamming_distance 1224558.0
+pass :  0 times
+hamming_distance 1229092.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1232992.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1237209.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1242393.0
+pass :  0 times
+hamming_distance 1246131.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1250401.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1254478.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1258834.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 1264765.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1268736.0
+pass :  0 times
+hamming_distance 1272371.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1277111.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1281701.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1287421.0
+pass :  0 times
+hamming_distance 1291831.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1296669.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1301409.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1305766.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1311124.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1316053.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1319799.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1324867.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1329534.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1333665.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1338047.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1343277.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1348333.0
+pass :  0 times
+hamming_distance 1352630.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1357731.0
+pass :  0 times
+hamming_distance 1363170.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1367535.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1372529.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 1377981.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 1383821.0
+pass :  0 times
+hamming_distance 1388802.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1394708.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1400105.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1404298.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 1409378.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1414907.0
+pass :  0 times
+hamming_distance 1419324.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 1423962.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1428717.0
+pass :  0 times
+hamming_distance 1432882.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1437230.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1443043.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1447363.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1453054.0
+pass :  0 times
+hamming_distance 1458115.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1462171.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1467934.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1472211.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1476840.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1482024.0
+pass :  0 times
+hamming_distance 1486732.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1491424.0
+pass :  0 times
+hamming_distance 1495548.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1500093.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1504733.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1510106.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1515561.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1521103.0
+pass :  0 times
+hamming_distance 1526316.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1530978.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1535322.0
+pass :  0 times
+hamming_distance 1539533.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 1545479.0
+pass :  0 times
+hamming_distance 1550033.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1554372.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 1559711.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1565307.0
+pass :  0 times
+hamming_distance 1570245.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1575000.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass : /usr/local/lib/python3.5/dist-packages/sklearn/base.py:311: UserWarning: Trying to unpickle estimator KMeans from version 0.19.1 when using version 0.19.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+ 3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1579126.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1584810.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1591205.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1595792.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1601663.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1606155.0
+pass :  0 times
+hamming_distance 1611467.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+hamming_distance 1616206.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 1621822.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1626798.0
+pass :  0 times
+hamming_distance 1631114.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1637854.0
+pass :  0 times
+hamming_distance 1642380.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+hamming_distance 1648320.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+hamming_distance 1653768.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1658110.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1663807.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+hamming_distance 1670064.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1675844.0
+pass :  0 times
+hamming_distance 1680895.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1685474.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+hamming_distance 1691964.0
+pass :  0 times
+hamming_distance 1697232.0
+pass :  0 times
+hamming_distance 1701701.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1706221.0
+pass :  0 times
+hamming_distance 1711129.0
+pass :  0 times
+hamming_distance 1716187.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1721629.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1727262.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+hamming_distance 1733443.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1738426.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+hamming_distance 1745139.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1750681.0
+pass :  0 times
+pass :  1 times
+hamming_distance 1755922.0
+pass :  0 times
+hamming_distance 1760682.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1765931.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+hamming_distance 1771194.0
+pass :  0 times
+pass :  1 times
+pass :  2 times
+pass :  3 times
+pass :  4 times
+pass :  5 times
+pass :  6 times
+pass :  7 times
+pass :  8 times
+pass :  9 times
+pass :  10 times
+pass :  0 times
+pass :  1 times
+hamming_distance 1777025.0
+dataset-sens_param :  census - 1
+hamming_distance(100) 41732.0
+hamming_distance(500) 1036720.0
+hamming_distance(1000) 1777025.0
+Total discriminatory inputs of global search- 657
+both_not_cross :  339
+both_cross     :  4
+adf_success    :  657
+adf_faild      :  343
+Execution time: 840.3703074455261 seconds
