@@ -1,0 +1,8 @@
+version: '3'
+services:
+  fl:
+  # イメージ名を設定
+    image: adf-master
+    build:
+      context: .
+      dockerfile: ./Dockerfile
