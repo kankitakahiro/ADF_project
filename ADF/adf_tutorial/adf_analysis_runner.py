@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # files_to_process = ["adf_origin.py", "adf_deep_search.py" ,"adf_fly.py","adf_deep_fly.py"]  # 実行するPythonファイルのパスリスト
     files_to_process = ["adf_origin.py", "adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
     output_directory = "data"                                   # 結果を保存するディレクトリ
-    num_runs = 5                                                # 各引数セットの実行回数
+    num_runs = 1                                                # 各引数セットの実行回数
 
     # デフォルトの共通引数
     default_arguments = {

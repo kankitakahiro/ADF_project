@@ -84,67 +84,6 @@ def clip(input, conf):
         input[i] = min(input[i], conf.input_bounds[i][1])
     return input
 
-# class Local_Perturbation(object):
-#     """
-#     The  implementation of local perturbation
-#     """
-
-#     def __init__(self, sess, grad, x, n_value, sens, input_shape, conf):
-#         """
-#         Initial function of local perturbation
-#         :param sess: TF session
-#         :param grad: the gradient graph
-#         :param x: input placeholder
-#         :param n_value: the discriminatory value of sensitive feature
-#         :param sens_param: the index of sensitive feature
-#         :param input_shape: the shape of dataset
-#         :param conf: the configuration of dataset
-#         """
-#         self.sess = sess
-#         self.grad = grad
-#         self.x = x
-#         self.n_value = n_value
-#         self.input_shape = input_shape
-#         self.sens = sens
-#         self.conf = conf
-
-    # def __call__(self, x):
-    #     """
-    #     Local perturbation
-    #     :param x: input instance for local perturbation
-    #     :return: new potential individual discriminatory instance
-    #     """
-
-    #     # perturbation
-    #     s = np.random.choice([1.0, -1.0]) * perturbation_size
-
-    #     n_x = x.copy()
-    #     n_x[self.sens - 1] = self.n_value
-
-    #     # compute the gradients of an individual discriminatory instance pairs
-    #     ind_grad = self.sess.run(self.grad, feed_dict={self.x:np.array([x])})
-    #     n_ind_grad = self.sess.run(self.grad, feed_dict={self.x:np.array([n_x])})
-
-    #     if np.zeros(self.input_shape).tolist() == ind_grad[0].tolist() and np.zeros(self.input_shape).tolist() == \
-    #             n_ind_grad[0].tolist():
-    #         probs = 1.0 / (self.input_shape-1) * np.ones(self.input_shape)
-    #         probs[self.sens - 1] = 0
-    #     else:
-    #         # nomalize the reciprocal of gradients (prefer the low impactful feature)
-    #         grad_sum = 1.0 / (abs(ind_grad[0]) + abs(n_ind_grad[0]))
-    #         grad_sum[self.sens - 1] = 0
-    #         probs = grad_sum / np.sum(grad_sum)
-    #     probs = probs/probs.sum()
-
-    #     # randomly choose the feature for local perturbation
-    #     index = np.random.choice(range(self.input_shape) , p=probs)
-    #     local_cal_grad = np.zeros(self.input_shape)
-    #     local_cal_grad[index] = 1.0
-
-    #     x = clip(x + s * local_cal_grad, self.conf).astype("int")
-
-    #     return x
-
 def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_global, max_local, max_iter):
     """
     The implementation of ADF
@@ -195,23 +134,6 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     deep_search_faild   = 0
     adf_success         = 0
     adf_faild           = 0
-
-    # def evaluate_local(inp):
-    #     """
-    #     Evaluate whether the test input after local perturbation is an individual discriminatory instance
-    #     :param inp: test input
-    #     :return: whether it is an individual discriminatory instance
-    #     """
-    #     result = check_for_error_condition(data_config[dataset], sess, x, preds, inp, sensitive_param)
-
-    #     temp = copy.deepcopy(inp.astype('int').tolist())
-    #     temp = temp[:sensitive_param - 1] + temp[sensitive_param:]
-    #     # tot_inputs.add(tuple(temp))
-    #     if result and (tuple(temp) not in global_disc_inputs) and (tuple(temp) not in local_disc_inputs):
-    #         local_disc_inputs.add(tuple(temp))
-    #         local_disc_inputs_list.append(temp)
-
-    #     return not result
 
     # select the seed input for fairness testing
     inputs = seed_test_input(clusters, min(max_global, len(X)))
@@ -268,21 +190,6 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
                 global_disc_inputs.add(tuple(temp))
                 value_list.append([sample[0, sensitive_param - 1], n_value])
                 suc_idx.append(index)
-                # hamming_distance = hamming_distance_sum(global_disc_inputs_list)
-                # print('hamming_distance',hamming_distance)
-                # print(len(suc_idx), num)
-
-                # # start local perturbation
-                # minimizer = {"method": "L-BFGS-B"}
-                # local_perturbation = Local_Perturbation(sess, grad_0, x, n_value, sensitive_param, input_shape[1],
-                #                                         data_config[dataset])
-                # basinhopping(evaluate_local, sample, stepsize=1.0, take_step=local_perturbation,
-                #              minimizer_kwargs=minimizer,
-                #              niter=max_local)
-
-                # print(len(local_disc_inputs_list),
-                #       "Percentage discriminatory inputs of local search- " + str(
-                #           float(len(local_disc_inputs)) / float(len(tot_inputs)) * 100))
                 break
 
             n_sample[0][sensitive_param - 1] = n_value
