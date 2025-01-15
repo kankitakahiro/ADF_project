@@ -97,6 +97,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     """
     data = {"census":census_data, "credit":credit_data, "bank":bank_data}
     data_config = {"census":census, "credit":credit, "bank":bank}
+    perturbation_size = 1
 
     # prepare the testing data and model
     X, Y, input_shape, nb_classes = data[dataset]()
@@ -127,11 +128,12 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     local_disc_inputs_list = []
     value_list = []
     suc_idx = []
+    adf_iter_count = 0
     both_not_cross = 0
     both_cross     = 0
     adf_success    = 0
     adf_faild      = 0
-    print('pass : setting')
+    # print('pass : setting')
 
     # select the seed input for fairness testing
     inputs = seed_test_input(clusters, min(max_global, len(X)))
@@ -149,12 +151,14 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
 
         # start global perturbation
         for iter in range(max_iter+1):
-            print('pass : ',iter,'times')
+            # print('pass : ',iter,'times')
             probs = model_prediction(sess, x, preds, sample)[0]
             label = np.argmax(probs)
             prob = probs[label]
             max_diff = 0
             n_value = -1
+            adf_iter_count += 1
+            
 
             # search the instance with maximum probability difference for global perturbation
             for i in range(config_instance.input_bounds[sensitive_param-1][0], config_instance.input_bounds[sensitive_param-1][1] + 1):
@@ -183,8 +187,8 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
                 value_list.append([sample[0, sensitive_param - 1], n_value])
                 suc_idx.append(index)
                 adf_success += 1
-                hamming_distance = hamming_distance_sum(global_disc_inputs_list)
-                print('hamming_distance',hamming_distance)
+                # hamming_distance = hamming_distance_sum(global_disc_inputs_list)
+                # print('hamming_distance',hamming_distance)
                 break
 
 
@@ -250,6 +254,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     print('both_cross     : ', both_cross    )
     print('adf_success    : ', adf_success   )
     print('adf_faild      : ', adf_faild     )
+    print('adf_iter_count : ', adf_iter_count)
     # print("Total discriminatory inputs of local search- " + str(len(local_disc_inputs)))
 
 def main(argv=None):
@@ -267,7 +272,7 @@ def main(argv=None):
 
 
 if __name__ == '__main__':
-    flags.DEFINE_string("dataset", "census", "the name of dataset")
+    flags.DEFINE_string("dataset", "credit", "the name of dataset")
     flags.DEFINE_integer('sens_param', 9, 'sensitive index, index start from 1, 9 for gender, 8 for race')
     flags.DEFINE_string('model_path', '../models/', 'the path for testing model')
     flags.DEFINE_integer('cluster_num', 4, 'the number of clusters to form as well as the number of centroids to generate')

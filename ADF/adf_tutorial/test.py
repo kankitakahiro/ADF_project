@@ -1,7 +1,12 @@
-from my_utils.calculate_hamming_distances import hamming_distance_sum
+# main.py
+from my_utils.dataset_config import dataset_config
+import numpy as np
+import tensorflow as tf
+import sys, os
 
-input_list = [[0,1,2,3,4],[1,2,2,3,4],[0,1,2,2,2],[1,1,2,3,2],[7,7,7,7,7]]
+# クラスをインスタンス化
+dataset = "census"
+config = dataset_config(dataset)
 
-hamming_distance = hamming_distance_sum(input_list)
-
-print(hamming_distance)
+# メソッドを呼び出し
+print(config.anlz_dataset())

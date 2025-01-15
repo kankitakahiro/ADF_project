@@ -4,6 +4,7 @@ import re
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
+import matplotlib.pyplot as plt
 
 
 def extract_data_from_files(root_dir, output_excel):
@@ -38,12 +39,12 @@ def extract_data_from_files(root_dir, output_excel):
                 data_by_sheet[sheet_name].append(extracted_data)
 
                 # Summary 用データの整理
-                dataset_key = get_dataset_key(sheet_name)
-                print(sheet_name)
+                dataset_key = get_dataset_key(file_path)
                 method = get_method(sheet_name)
                 if dataset_key not in summary_data:
                     summary_data[dataset_key] = {"adf_origin": {}, "adf_deep_search": {}}
                 summary_data[dataset_key][method] = extracted_data
+                # print(summary_data)
 
     # データを Excel に保存
     with pd.ExcelWriter(output_excel, engine="openpyxl") as writer:
@@ -62,11 +63,16 @@ def extract_data_from_files(root_dir, output_excel):
 
         # Summary シートを作成
         summary_df = create_summary_table(summary_data)
+        # 'Dataset' カラムに基づいて昇順で並び替え
+        summary_df = summary_df.sort_values(by='Dataset', ascending=True)    
         summary_df.to_excel(writer, sheet_name="Summary", index=True, startrow=2)
 
     # Excel ファイルにテーブルのマージを適用
     # add_summary_headers(output_excel, "Summary")
     print("The data has been saved to {}.".format(output_excel))
+    # データをプロット
+    graph_folder = 'graphs'
+    plot_all_metrics(summary_df,graph_folder)
 
 
 def parse_file_content(content):
@@ -93,6 +99,7 @@ def parse_file_content(content):
     data["both_not_cross"] = extract_value(r"both_not_cross\s+:\s+(\d+)", content)
     data["both_cross"] = extract_value(r"both_cross\s+:\s+(\d+)", content)
     data["execution_time"] = extract_value(r"Execution time:\s+([\d.]+) seconds", content)
+    data["adf_iter_count"] = extract_value(r"adf_iter_count\s+:\s+([\d.]+)", content)
 
     return data
 
@@ -122,13 +129,33 @@ def extract_sheet_name(file_path):
     Returns:
         str: シート名（`adf_deep_search/dataset=...` 部分）。
     """
+    print(file_path)
     method_match = re.search(r"(adf_deep_search|adf_origin|adf_fly|adf_deep_fly)", file_path)
-    method_name = method_match.group(0) if method_match else "unknown_method"
+    if method_match:
+        method_name = method_match.group(0)
+        # メソッド名を省略（例: "adf_deep_search" -> "ads"）
+        method_name_short = ''.join([word[0] for word in method_name.split('_')])
+    else:
+        method_name_short = "unknown_method"
 
-    dataset_match = re.search(r"dataset=.*?_sensparam=\d+", file_path)
-    dataset_name = dataset_match.group(0) if dataset_match else "unknown_dataset"
+    # データセット名のマッチ
+    dataset_match = re.search(r"dataset=([a-zA-Z0-9]+)_sensparam=\d+", file_path)
+    if dataset_match:
+        dataset_name_full = dataset_match.group(1)  # "dataset=xxxx" の xxxx を取得
+        # 必要に応じてデータセット名をさらに省略する（例: 最初の3文字だけ取る）
+        # dataset_name_short = dataset_name_full[:3]
+        dataset_name_short = dataset_name_full
+    else:
+        dataset_name_short = "unknown_dataset"
 
-    return "{}_{}".format(method_name, dataset_name)
+    # センシティブパラメータの抽出
+    sensparam_match = re.search(r"sensparam=\d+_([a-zA-Z]+)", file_path)
+    if sensparam_match:
+        sensitive_attribute = sensparam_match.group(1)  # "sensparam=9_sex" の "sex" を取得
+    else:
+        sensitive_attribute = "unknown_attribute"
+
+    return "{}_{}_{}".format(method_name_short, dataset_name_short,sensitive_attribute)
 
 
 def sanitize_sheet_name(sheet_name):
@@ -174,13 +201,13 @@ def get_method(sheet_name):
     Returns:
         str: メソッド名（`adf_origin` または `adf_deep_search`）。
     """
-    if "adf_origin" in sheet_name:
+    if "ao" in sheet_name:
         return "adf_origin"
-    elif "adf_deep_search" in sheet_name:
+    elif "ads" in sheet_name:
         return "adf_deep_search"
-    elif "adf_fly" in sheet_name:
+    elif "af" in sheet_name:
         return "adf_fly"
-    elif "adf_deep_fly" in sheet_name:
+    elif "adf" in sheet_name:
         return "adf_deep_fly"
     return "unknown_method"
 
@@ -199,42 +226,52 @@ def create_summary_table(summary_data):
     for dataset, methods in summary_data.items():
         row = {"Dataset": dataset}
         for method, data in methods.items():
+            print('method:')
+            print(method)
+            print('data:')
+            print(data)
             if data:
                 for key, value in data.items():
                     row["{}_{}".format(method, key)] = value
         rows.append(row)
-
+    print('rows:')
+    print(rows)
     return pd.DataFrame(rows)
 
+def plot_all_metrics(df, graph_folder):
+    # フォルダが存在しない場合は作成
+    if not os.path.exists(graph_folder):
+        os.makedirs(graph_folder)
 
-# def add_summary_headers(excel_file, sheet_name):
-#     """
-#     Summary シートのヘッダーをマージする関数。
+    metrics = [
+        'hamming_distance_100', 'hamming_distance_500', 'hamming_distance_1000',
+        'total_discriminatory_inputs', 'deep_search_success', 'deep_search_failed',
+        'adf_success', 'adf_failed', 'both_not_cross', 'both_cross', 'execution_time','adf_iter_count',
+    ]
 
-#     Args:
-#         excel_file (str): Excel ファイルのパス。
-#         sheet_name (str): 修正するシート名。
-#     """
-#     wb = load_workbook(excel_file)
-#     ws = wb[sheet_name]
+    methods = ['adf_origin', 'adf_deep_search']
 
-#     # 列の範囲を取得
-#     max_col = ws.max_column
+    for metric in metrics:
+        plt.figure(figsize=(12, 6))
+        bar_width = 0.35
+        index = range(len(df))
 
-#     # マージ範囲を計算してヘッダーを追加
-#     adf_origin_start = 2
-#     adf_origin_end = (max_col // 2) + 1
-#     adf_deepsearch_start = adf_origin_end + 1
-#     adf_deepsearch_end = max_col
+        # 各メソッドについてグラフを生成
+        for i, method in enumerate(methods):
+            metric_name = f'{method}_{metric}'
+            if metric_name in df.columns:
+                # None値を0や適切な値に置き換え
+                clean_values = df[metric_name].fillna(0)  # None値を0に置き換える
+                plt.bar([p + bar_width * i for p in index], clean_values, bar_width, label=method.replace('_', ' ').title())
 
-#     ws.merge_cells(start_row=1, start_column=adf_origin_start, end_row=1, end_column=adf_origin_end)
-#     ws.merge_cells(start_row=1, start_column=adf_deepsearch_start, end_row=1, end_column=adf_deepsearch_end)
-
-#     ws.cell(row=1, column=adf_origin_start, value="adf_origin").alignment = Alignment(horizontal="center")
-#     ws.cell(row=1, column=adf_deepsearch_start, value="adf_deepsearch").alignment = Alignment(horizontal="center")
-
-#     wb.save(excel_file)
-
+        plt.xlabel('Dataset')
+        plt.ylabel(metric.replace('_', ' ').title())
+        plt.title(f'Comparison of {metric.replace("_", " ").title()} by Method')
+        plt.xticks([p + bar_width / 2 for p in index], df['Dataset'], rotation=45)
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(f"{graph_folder}/{metric}.png")
+        plt.close()
 
 if __name__ == "__main__":
     # データのあるフォルダ
