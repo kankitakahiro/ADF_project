@@ -75,12 +75,12 @@ if __name__ == "__main__":
     files_to_process = ["adf_origin.py", "adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
     # files_to_process = ["adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
     output_directory = "data"                                   # 結果を保存するディレクトリ
-    num_runs = 5                                               # 各引数セットの実行回数
+    num_runs = 10                                               # 各引数セットの実行回数
 
     # デフォルトの共通引数
     default_arguments = {
         "model_path": "../models/",
-        "cluster_num": 10,
+        "cluster_num": 4,
         "max_global": 500,
         "max_local": 100,
         "max_iter": 10,

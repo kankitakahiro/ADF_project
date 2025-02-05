@@ -22,6 +22,7 @@ def reduce_g_diff_and_search(sess, x, preds, g_diff, sample, s_grad, data_config
     """
 
     ones_indices = [i for i, val in enumerate(g_diff) if val != 0.0]
+    deep_serach_iter_count = 0
 
     if not ones_indices:
         # If g_diff has no 1s, there's nothing to explore
@@ -38,6 +39,7 @@ def reduce_g_diff_and_search(sess, x, preds, g_diff, sample, s_grad, data_config
 
     for combination in sorted_combinations:
         # print("conbination : ",combination)
+        deep_serach_iter_count += 1
         new_g_diff = g_diff.copy()
 
         # Apply the combination to the new_g_diff
@@ -74,9 +76,9 @@ def reduce_g_diff_and_search(sess, x, preds, g_diff, sample, s_grad, data_config
                     break
         if label != n_label:
             # print("Found discriminatory sample: {}".format(perturbed_sample))
-            return perturbed_sample
+            return perturbed_sample, deep_serach_iter_count
     # print("No discriminatory sample found in all combinations.")
-    return None
+    return None, deep_serach_iter_count
 
 
 def reduce_g_diff_and_fly(sess, x, preds, g_diff, sample, s_grad, data_config, dataset, perturbation_size, sensitive_param, column_frequencies):

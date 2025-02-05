@@ -99,6 +99,8 @@ def parse_file_content(content):
     data["both_not_cross"] = extract_value(r"both_not_cross\s+:\s+(\d+)", content)
     data["both_cross"] = extract_value(r"both_cross\s+:\s+(\d+)", content)
     data["execution_time"] = extract_value(r"Execution time:\s+([\d.]+) seconds", content)
+    data["deep_search_time"] = extract_value(r"deep_search_time\s+:\s+([\d.]+)", content)
+    data["deep_serach_iter_count"] = extract_value(r"deep_serach_iter_count\s+:\s+([\d.]+)", content)
     data["adf_iter_count"] = extract_value(r"adf_iter_count\s+:\s+([\d.]+)", content)
 
     return data
@@ -246,7 +248,7 @@ def plot_all_metrics(df, graph_folder):
     metrics = [
         'hamming_distance_100', 'hamming_distance_500', 'hamming_distance_1000',
         'total_discriminatory_inputs', 'deep_search_success', 'deep_search_failed',
-        'adf_success', 'adf_failed', 'both_not_cross', 'both_cross', 'execution_time','adf_iter_count',
+        'adf_success', 'adf_failed', 'both_not_cross', 'both_cross', 'execution_time', 'deep_search_time', 'deep_serach_iter_count','adf_iter_count',
     ]
 
     methods = ['adf_origin', 'adf_deep_search']

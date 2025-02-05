@@ -168,6 +168,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     adf_success         = 0
     adf_faild           = 0
     deepsearch_time     = []
+    deep_serach_iter_count = []
 
     # select the seed input for fairness testing
     inputs = seed_test_input(clusters, min(max_global, len(X)))
@@ -278,7 +279,8 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
                 deepsearch_start_time = time.time()
                 deep_flag = True
                 max_depth = len(g_diff)  # Maximum number of recursive calls
-                result = reduce_g_diff_and_search(sess, x, preds, g_diff, previous_sample, s_grad, data_config, dataset, perturbation_size, sensitive_param)
+                result, each_deep_serach_iter_count = reduce_g_diff_and_search(sess, x, preds, g_diff, previous_sample, s_grad, data_config, dataset, perturbation_size, sensitive_param)
+                deep_serach_iter_count.append(each_deep_serach_iter_count)
                 deepsearch_end_time = time.time()
                 deepsearch_time.append(deepsearch_end_time - deepsearch_start_time)
                 if result is not None:
@@ -305,10 +307,14 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     # print("Total Inputs are " + str(len(tot_inputs)))
     hamming_distance = hamming_distance_sum(global_disc_inputs_list,100)
     print('hamming_distance(100)',hamming_distance)
+    hamming_distance = hamming_distance_sum(global_disc_inputs_list,300)
+    print('hamming_distance(300)',hamming_distance)
     hamming_distance = hamming_distance_sum(global_disc_inputs_list,500)
     print('hamming_distance(500)',hamming_distance)
     hamming_distance = hamming_distance_sum(global_disc_inputs_list)
     print('hamming_distance(1000)',hamming_distance)
+    hamming_distance = hamming_distance_sum(global_disc_inputs_list,1500)
+    print('hamming_distance(1500)',hamming_distance)
     num_global_disc_inputs = len(global_disc_inputs)
     print("Total discriminatory inputs of global search- " + str(num_global_disc_inputs))
     # FIXME:both_crossの数がADFとDeep Searchの差ができる部分を改良する
@@ -323,6 +329,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     print('check result sum    : ', both_cross + both_not_cross + num_global_disc_inputs,num_total_attempts)
     print('adf_iter_count      : ', adf_iter_count)
     print('deep_search_time    : ', sum(deepsearch_time))
+    print('deep_serach_iter_count : ',sum(deep_serach_iter_count))
 
 def main(argv=None):
     start_time = time.time()
@@ -339,7 +346,7 @@ def main(argv=None):
 
 
 if __name__ == '__main__':
-    flags.DEFINE_string("dataset", "census", "the name of dataset")
+    flags.DEFINE_string("dataset", "bank", "the name of dataset")
     flags.DEFINE_integer('sens_param', 1, 'sensitive index, index start from 1, 9 for gender, 8 for race')
     flags.DEFINE_string('model_path', '../models/', 'the path for testing model')
     flags.DEFINE_integer('cluster_num', 4, 'the number of clusters to form as well as the number of centroids to generate')
