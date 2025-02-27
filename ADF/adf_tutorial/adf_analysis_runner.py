@@ -1,6 +1,6 @@
 import os
 import subprocess
-
+from datetime import datetime
 
 # 対応表：データセット名と `sens_param` の説明
 SENS_PARAM_MAPPING = {
@@ -72,15 +72,24 @@ def process_adf_multiple_runs(file_paths, output_dir, num_runs, args_list):
 if __name__ == "__main__":
     # 実行ファイルと設定
     # files_to_process = ["adf_origin.py", "adf_deep_search.py" ,"adf_fly.py","adf_deep_fly.py"]  # 実行するPythonファイルのパスリスト
-    files_to_process = ["adf_origin.py", "adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
-    # files_to_process = ["adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
-    output_directory = "data"                                   # 結果を保存するディレクトリ
-    num_runs = 10                                               # 各引数セットの実行回数
+    # files_to_process = ["adf_origin.py", "adf_deep_search.py"]  # 実行するPythonファイルのパスリスト
+    files_to_process = ["adf_origin.py"]  # 実行するPythonファイルのパスリスト
+    # output_directory = "data"                                   # 結果を保存するディレクトリ
+    num_runs = 1                                               # 各引数セットの実行回数
+
+    # 現在の日付を "YYYYMMDD" 形式で取得
+    today = datetime.now().strftime("%Y%m%d")
+
+    # ファイル名（拡張子なし）を連結した文字列を作成
+    files_info = "_".join([os.path.splitext(os.path.basename(f))[0] for f in files_to_process])
+
+    # "data" ディレクトリ内に、日付とファイル情報を組み合わせた新しいディレクトリパスを生成
+    output_directory = os.path.join("data", "{}_{}".format(today, files_info))
 
     # デフォルトの共通引数
     default_arguments = {
         "model_path": "../models/",
-        "cluster_num": 4,
+        "cluster_num": 10,
         "max_global": 500,
         "max_local": 100,
         "max_iter": 10,

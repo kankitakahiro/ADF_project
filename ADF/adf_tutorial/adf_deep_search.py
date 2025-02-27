@@ -19,6 +19,7 @@ from adf_tutorial.utils import cluster, gradient_graph
 
 from my_utils.calculate_hamming_distances import hamming_distance_sum
 from my_utils.deep_search import reduce_g_diff_and_search
+from my_utils.deep_search import reduce_g_diff_and_search_cutoff
 from my_utils.dataset_config import dataset_config
 
 FLAGS = flags.FLAGS
@@ -168,7 +169,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     adf_success         = 0
     adf_faild           = 0
     deepsearch_time     = []
-    deep_serach_iter_count = []
+    deep_search_iter_count = []
 
     # select the seed input for fairness testing
     inputs = seed_test_input(clusters, min(max_global, len(X)))
@@ -278,9 +279,8 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
                 # Use recursive reduction of g_diff
                 deepsearch_start_time = time.time()
                 deep_flag = True
-                max_depth = len(g_diff)  # Maximum number of recursive calls
-                result, each_deep_serach_iter_count = reduce_g_diff_and_search(sess, x, preds, g_diff, previous_sample, s_grad, data_config, dataset, perturbation_size, sensitive_param)
-                deep_serach_iter_count.append(each_deep_serach_iter_count)
+                result, each_deep_search_iter_count = reduce_g_diff_and_search_cutoff(sess, x, preds, g_diff, previous_sample, s_grad, data_config, dataset, perturbation_size, sensitive_param,origin_label)
+                deep_search_iter_count.append(each_deep_search_iter_count)
                 deepsearch_end_time = time.time()
                 deepsearch_time.append(deepsearch_end_time - deepsearch_start_time)
                 if result is not None:
@@ -320,7 +320,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     # FIXME:both_crossの数がADFとDeep Searchの差ができる部分を改良する
     print('both_not_cross : ', both_not_cross)
     print('both_cross     : ', both_cross    )
-    num_total_attempts = 600 if dataset  == "credit" else max_global
+    num_total_attempts = 600 if dataset == "credit" and max_global >= 600 else max_global
     # assert both_cross + both_not_cross + num_global_disc_inputs == num_total_attempts
     print('deep_search_success : ', deep_search_success)
     print('deep_search_faild   : ', deep_search_faild  )
@@ -329,7 +329,8 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     print('check result sum    : ', both_cross + both_not_cross + num_global_disc_inputs,num_total_attempts)
     print('adf_iter_count      : ', adf_iter_count)
     print('deep_search_time    : ', sum(deepsearch_time))
-    print('deep_serach_iter_count : ',sum(deep_serach_iter_count))
+    print('deep_search_iter_count : ',sum(deep_search_iter_count))
+    # print('deep_search_iter_count : ', deep_search_iter_count)
 
 def main(argv=None):
     start_time = time.time()
@@ -346,8 +347,8 @@ def main(argv=None):
 
 
 if __name__ == '__main__':
-    flags.DEFINE_string("dataset", "bank", "the name of dataset")
-    flags.DEFINE_integer('sens_param', 1, 'sensitive index, index start from 1, 9 for gender, 8 for race')
+    flags.DEFINE_string("dataset", "credit", "the name of dataset")
+    flags.DEFINE_integer('sens_param', 9, 'sensitive index, index start from 1, 9 for gender, 8 for race')
     flags.DEFINE_string('model_path', '../models/', 'the path for testing model')
     flags.DEFINE_integer('cluster_num', 4, 'the number of clusters to form as well as the number of centroids to generate')
     flags.DEFINE_integer('max_global', 100, 'maximum number of samples for global search')

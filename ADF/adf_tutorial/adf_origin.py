@@ -145,6 +145,7 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     for num in range(len(inputs)):
         index = inputs[num]
         sample = X[index:index+1]
+        # print(sample)
         # 最初のラベルを計算する
         origin_probs = model_prediction(sess, x, preds, sample)[0]
         origin_label = np.argmax(origin_probs)
@@ -254,6 +255,11 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
     hamming_distance = hamming_distance_sum(global_disc_inputs_list,1500)
     print('hamming_distance(1500)',hamming_distance)
     print("Total discriminatory inputs of global search- " + str(len(global_disc_inputs)))
+    # f = open('IDI.txt', 'w', encoding='UTF-8')
+    # f.write('global_disc_inputs')
+    # datalist = global_disc_inputs
+    # f.writelines(datalist)
+    # f.close()
     print('both_not_cross : ', both_not_cross)
     print('both_cross     : ', both_cross    )
     print('adf_success    : ', adf_success   )
@@ -276,11 +282,11 @@ def main(argv=None):
 
 
 if __name__ == '__main__':
-    flags.DEFINE_string("dataset", "credit", "the name of dataset")
-    flags.DEFINE_integer('sens_param', 9, 'sensitive index, index start from 1, 9 for gender, 8 for race')
+    flags.DEFINE_string("dataset", "census", "the name of dataset")
+    flags.DEFINE_integer('sens_param', 8, 'sensitive index, index start from 1, 9 for gender, 8 for race')
     flags.DEFINE_string('model_path', '../models/', 'the path for testing model')
-    flags.DEFINE_integer('cluster_num', 4, 'the number of clusters to form as well as the number of centroids to generate')
-    flags.DEFINE_integer('max_global', 100, 'maximum number of samples for global search')
+    flags.DEFINE_integer('cluster_num', 10, 'the number of clusters to form as well as the number of centroids to generate')
+    flags.DEFINE_integer('max_global', 500, 'maximum number of samples for global search')
     flags.DEFINE_integer('max_local', 100, 'maximum number of samples for local search')
     flags.DEFINE_integer('max_iter', 10, 'maximum iteration of global perturbation')
 
