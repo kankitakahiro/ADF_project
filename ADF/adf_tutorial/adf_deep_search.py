@@ -279,6 +279,9 @@ def dnn_fair_testing(dataset, sensitive_param, model_path, cluster_num, max_glob
                 # Use recursive reduction of g_diff
                 deepsearch_start_time = time.time()
                 deep_flag = True
+                # HACK 関数名でcutoffのあるなしを変更している。
+                # reduce_g_diff_and_search        cutoffなし
+                # reduce_g_diff_and_search_cutoff cutoffあり
                 result, each_deep_search_iter_count = reduce_g_diff_and_search_cutoff(sess, x, preds, g_diff, previous_sample, s_grad, data_config, dataset, perturbation_size, sensitive_param,origin_label)
                 deep_search_iter_count.append(each_deep_search_iter_count)
                 deepsearch_end_time = time.time()
